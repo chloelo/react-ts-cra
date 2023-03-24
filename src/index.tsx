@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './unit02-use-state/';
-
+import App from './unit05-enums/';
+import { InputValueProvider } from './context/InputValueContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App  />
+    <InputValueProvider>
+      <App />
+    </InputValueProvider>
   </React.StrictMode>
 );
 
